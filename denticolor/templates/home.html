@@ -1,0 +1,107 @@
+{% extends "layout.html"%}
+
+{% block head %}
+     <link rel="shortcut icon" type="image/x-icon" href="https://images.vexels.com/media/users/3/152018/isolated/lists/c728796e46fb111cce09ffd324a40949-tooth-colorful-icon.png" type="image/x-icon" />
+{% endblock %}
+
+{% block title %}
+Home
+{% endblock %}
+{% block main %}
+<!--https://firefly.adobe.com/inspire/images-->
+
+<div>
+    <div class="image-container">
+        <img class="background" src="static/back2.jpg" alt="Snow">
+        <div class="text-over-image">
+            <p style="text-align: center; font-size: large"><a href="/selector" style="color: white;">
+                    <large>
+                        <large>Pick perfect color for your patients.</large>
+                    </large>
+                </a></p>
+        </div>
+    </div>
+</div>
+<br><br><br><br>
+<div class="container">
+    <div class="centered-diva">
+        <div class="image-containera">
+            <img src="static/upload.png" alt="Item 1" class="img-fluid custom-works colorful-image">
+            <p class="image-text">Upload image</p>
+        </div>
+        <div class="image-containera">
+            <img src="static/point.png" alt="Item 2" class="img-fluid custom-works colorful-image">
+            <p class="image-text">Select pixel</p>
+        </div>
+        <div class="image-containera">
+            <img src="static/found.png" alt="Item 3" class="img-fluid custom-works colorful-image">
+            <p class="image-text">Find color match</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="centered-div-2">
+        <div class="double-width-image">
+            <div class="gfg">
+
+                <div class="left-column">
+                    <h3 class="title">Be sure your picture:</h3>
+                    <p></p>
+                    <!-- Left-aligned statements -->
+                    <p style="text-align: left; font-size: large">- In supported format</p>
+                    <p style="text-align: left; font-size: large">- Taken under natural light</p>
+                    <p style="text-align: left; font-size: large">- Taken with teeth are on camera level</p>
+                </div>
+                <div class="right-column">
+                    <!-- Right-aligned statements -->
+                    <p style="text-align: left; font-size: large">- Taken before procedures</p>
+                    <p style="text-align: left; font-size: large">- Taken with clean teeth</p>
+                    <p style="text-align: left; font-size: large">- Taken with no makeup</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="single-width-image">
+            <img src="static/side.jpg" alt="Item 2" class="img-fluid custom-works colorful-image single-width-image">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block body %}
+
+
+<footer class="footer">
+
+    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <br><br>
+        <h5 class="text-uppercase mb-0">Menu</h5>
+        <ul class="list-unstyled">
+            <li>
+                <a href="/" class="text-dark">Home</a>
+            </li>
+            <li>
+                <a href="/selector" class="text-dark">Selector</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <br><br>
+        <h5 class="text-uppercase mb-0">Contect</h5>
+        <ul class="list-unstyled">
+            <li>
+                <a href="https://www.linkedin.com/in/ayb%C3%BCke-g%C3%BCven-b68184180" class="text-dark">Linkedin</a>
+            </li>
+            <li>
+                <a href="mailto:aybukeguven59@gmail.com" class="text-dark">Mail</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+{% endblock %}

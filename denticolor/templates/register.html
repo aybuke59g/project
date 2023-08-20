@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block head %}        <link rel="shortcut icon" type="image/x-icon" href="https://images.vexels.com/media/users/3/152018/isolated/lists/c728796e46fb111cce09ffd324a40949-tooth-colorful-icon.png" type="image/x-icon" />
+{% endblock %}
+{% block title %}
+Register
+{% endblock %}
+
+{% block main %}
+<div class="float-containerb with-backgrounda">
+    <div class="float-containerl">
+        <form action="/register" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="confirmation" name="confirmation" placeholder="Confirmation" type="password">
+            </div>
+            <button class="btn btn-primary" type="submit">Register</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

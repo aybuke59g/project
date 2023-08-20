@@ -1,0 +1,56 @@
+{% extends "layout.html"%}
+
+{% block head %}
+   <link rel="shortcut icon" type="image/x-icon" href="https://images.vexels.com/media/users/3/152018/isolated/lists/c728796e46fb111cce09ffd324a40949-tooth-colorful-icon.png" type="image/x-icon" />
+{% endblock %}
+
+{% block title %}
+Selector
+{% endblock %}
+
+{% block main %}
+<div class="float-containerb with-background">
+
+    <div class="float-container">
+        <div class="float-child">
+            <div class="body">
+                <div id="display_image"></div>
+                <input type="file" id="image_input" accept="image/png, image/jpg, image/jpeg, image/pneg">
+            </div>
+        </div>
+
+        <div class="float-child">
+            <div id="color-pickers">
+                <div class="color-picker">
+                    <div class="color-info" id="hovered-color"></div>
+                    <div class="color-square" id="hovered-color-square"></div>
+                </div>
+                <div class="color-picker">
+                    <div class="color-info" id="selected-color"></div>
+                </div>
+
+                <div class="float-child">
+                    <div id="color-match-result">
+                        {% if color_match_result %}
+                        <p>{{ color_match_result }}</p>
+                        {% else %}
+                        <p>No color match found</p>
+                        {% endif %}
+
+
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <p style="color: #b2b2b2">*Variations in color codes may occur across different companies."</p>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="/static/image_up.js"></script>
+
+
+
+{% endblock %}
